@@ -1,0 +1,56 @@
+{
+  "name": "@goodjin/dsh-command-commit-merge-push",
+  "version": "0.1.0",
+  "description": "DSH plugin: commit, merge to main, and push in one slash command",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodjin/dsh-command-commit-merge-push.git"
+  },
+  "homepage": "https://github.com/goodjin/dsh-command-commit-merge-push#readme",
+  "bugs": {
+    "url": "https://github.com/goodjin/dsh-command-commit-merge-push/issues"
+  },
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/**/*.ts",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "command",
+    "git",
+    "ship"
+  ],
+  "author": "goodjin",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

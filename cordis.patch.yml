@@ -1,0 +1,12 @@
+# 本仓库（@goodjin/dsh-command-commit-merge-push）的挂载配置。
+#
+# /commit-merge-push 命令：跑 typecheck → test → build 门禁，提交当前分支，
+# 合到 main 并推送。worktree 分支合完主分支和分支都推；已经在 main 上只推 main。
+#
+# 用法：把下面的 insert 段合并进你的 profile 的 cordis.patch.yml，
+# 并在 profile 的 package.json 里加依赖
+# "@goodjin/dsh-command-commit-merge-push": "link:<本仓库路径>"。
+
+- insert:
+    - id: goodjin-commit-merge-push
+      name: '@goodjin/dsh-command-commit-merge-push'
