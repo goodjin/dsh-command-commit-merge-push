@@ -1,5 +1,5 @@
 {
-  "name": "@goodjin/dsh-command-commit-merge-push",
+  "name": "@goodjin2/dsh-command-commit-merge-push",
   "version": "0.1.0",
   "description": "DSH plugin: commit, merge to main, and push in one slash command",
   "repository": {

@@ -1,4 +1,4 @@
-# @goodjin/dsh-command-commit-merge-push
+# @goodjin2/dsh-command-commit-merge-push
 
 The `/commit-merge-push` command: run the three git steps behind one slash command, with the repo's gates in between so a red build never lands.
 
@@ -51,7 +51,7 @@ Add to your profile's package.json:
 
 ```json
 {
-  "dependencies": { "@goodjin/dsh-command-commit-merge-push": "link:~/github/dsh-plugins/dsh-command-commit-merge-push" }
+  "dependencies": { "@goodjin2/dsh-command-commit-merge-push": "link:~/github/dsh-plugins/dsh-command-commit-merge-push" }
 }
 ```
 

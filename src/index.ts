@@ -2,7 +2,7 @@
  * The `/commit-merge-push` command: run the three git steps behind one slash
  * command, with the repo's gates in between so a red build never lands.
  *
- * @module @threadharbor/dsh-command-commit-merge-push
+ * @module @goodjin2/dsh-command-commit-merge-push
  */
 
 import { executeShip } from './ship.ts'
