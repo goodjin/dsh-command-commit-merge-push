@@ -55,4 +55,23 @@ Add to your profile's package.json:
 }
 ```
 
-And merge this repo's cordis.patch.yml insert section into your profile's patch.
+And list the bundle in `dsh.profile.bundles`:
+
+```json
+{
+  "dsh": { "profile": { "bundles": ["@goodjin2/dsh-command-commit-merge-push"] } }
+}
+```
+
+The bundle's rows come from this repo's own `cordis.patch.yml` (declared as
+`dsh.bundle.patch` in package.json), so there is nothing to merge into the
+profile's own patch. **Without that declaration the host skips the whole
+bundle** — the command simply never appears, with only one line in the startup
+log to show for it:
+
+```
+dsh: skipping profile bundle "@goodjin2/dsh-command-commit-merge-push": Error: … declares no dsh.bundle in its package.json
+```
+
+This plugin is host-side only (it registers a slash command); it has no
+browser half, so it declares no `dsh.client`.

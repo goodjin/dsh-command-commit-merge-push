@@ -34,6 +34,11 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
   "keywords": [
     "deepseek-harness",
     "dsh",
